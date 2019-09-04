@@ -1,6 +1,6 @@
 FROM mariadb
 COPY custom.cnf /etc/mysql/conf.d
-COPY backup-mysql.sh /root
+COPY backup-mysql.sh /etc/cron.daily
 ENV MYSQL_ROOT_PASSWORD tHeRo0TpWd
 ENV MYSQL_DATABASE theDatabase
 ENV MYSQL_USER theUser
