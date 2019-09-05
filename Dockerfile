@@ -2,7 +2,7 @@ FROM mariadb
 COPY custom.cnf /etc/mysql/conf.d
 COPY backup-mysql.sh /root
 COPY startup.sh /
-COPY backup-mysql-cron /etc/cron.d
+COPY backup-mysql-cron /root
 RUN chmod 755 /root/backup-mysql.sh
 RUN chmod 755 /startup.sh
 RUN apt-get update
