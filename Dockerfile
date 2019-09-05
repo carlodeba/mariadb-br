@@ -4,7 +4,7 @@ COPY backup-mysql.sh /root
 RUN chmod 755 /root/backup-mysql.sh
 RUN apt-get update
 RUN apt-get install cron
-CMD ["/bin/bash", "/etc/init.d/cron start"]
+ENTRYPOINT ["/etc/init.d/cron", "start"]
 ENV MYSQL_ROOT_PASSWORD tHeRo0TpWd
 ENV MYSQL_DATABASE theDatabase
 ENV MYSQL_USER theUser
