@@ -1,3 +1,5 @@
 #!/bin/bash
-/docker-entrypoint.sh mysqld
+set -eo pipefail
 /etc/init.d/cron start
+/docker-entrypoint.sh mysqld
+exec "$@"
