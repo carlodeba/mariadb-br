@@ -1,6 +1,6 @@
 #!/bin/bash
 DATE=$(/bin/date +%a-%H)
-SQL_FILES=/var/backup/mysql_all_$DATE
+SQL_FILES=/var/backups/mysql_all_$DATE
 MYSQL='mysql -N -uroot -p$MYSQL_ROOT_PASSWORD'
 MYSQLDUMP='mysqldump -uroot -p$MYSQL_ROOT_PASSWORD --single-transaction'
 DATABASES=`echo show databases|${MYSQL}|xargs`
