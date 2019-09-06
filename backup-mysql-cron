@@ -1,1 +1,1 @@
-0 10 * * * root /root/backup-mysql.sh >> /var/backups/backup-mysql.log
+18 1 * * * root /root/backup-mysql.sh >> /var/backups/backup-mysql.log
