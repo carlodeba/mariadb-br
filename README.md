@@ -1,5 +1,5 @@
 # mariadb-mdc
-MariaDB official image with a daily dump of all DBs. 
+MariaDB official image (10.4.7) with a daily dump of all DBs. 
 
 Dumps are stored in /var/backups.
 A peristent volume mount is reccomended for /var/backups.
